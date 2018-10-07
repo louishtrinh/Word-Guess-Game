@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center" style="font-family: 'Kodchasan', sans-serif; color: #ffffff; font-size: 70px; opacity: 1;">
+                    <strong>Word Guess Game</strong>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <hr>
+            </div>
+
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="row" style="opacity: 1;">
+                    <div class="col-6 text-right">
+                        <h2 class="badge badge-secondary" style="font-size:30px"> Score: <span class="fas fa-star" id="score">0</span></h2>
+                    </div>
+                    <div class="col-6 text-left">
+                        <h2 class="badge badge-secondary" style="font-size:30px"> Life: <span class="fas fa-heartbeat"
+                                id="life">15</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                <div class="card text-white bg-secondary mb-3 w-max">
+                    <div id="gameCard" class="card-header">
+                        <h2 class="fas fa-gamepad"> Instruction: <span id="pressToStart" style="font-size:20px">Press
+                                any key to start playing (Not your car key)!</span></h2>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 w">
+                            <h2 class="fab fa-cloudversify" style="font-size: 25px;"> Today's word: <span id="toGuess">What to choose, what to
+                                    choose</span></h2>
+                            <footer class="blockquote-footer" style="color:black; font-size: 20px;">Words have been used: <span id="guessedWord"></span></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-6 mt-5">
+                <img class="img-fluid" id="picReward" src="" alt="Singers image" style="opacity: 0;">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" id="songReward" src="" frameborder="0"
+                    allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+
+<footer class="page-footer font-small unique-color-dark pt-4" style="color:white;">
+
+        <div class="container" style="background: color #888888; background-size: cover;">
+    
+          <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+              <h5 class="mb-1 fas fa-bug" style="font-size:20px;"> See a bug?</h5>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:Louis.H.Trinh@gmail.com" style="font-size:20px;">Email Me</a> 
+            </li>
+          </ul>
+    
+        </div>
+    
+        <div class="text-center py-3" style="font-size:20px;">© 2018 Copyright:
+          <a href="https://louishtrinh.github.io/Responsive-Portfolio/" style="font-size:20px;">Louis Trinh</a>
+        </div>
+    
+      </footer>
+
+    </div>
+
+
+
+    <!-- <img src="assets/images/Hero_SpacePage_Galaxy.jpg" class="img-fluid" alt="Responsive image"> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
+<!-- this.wordToGuess = (this.artist[Math.floor(Math.random() * this.artist.length)]).split(""); -->
