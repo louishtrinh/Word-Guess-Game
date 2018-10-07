@@ -1,3 +1,3 @@
 # Word-Guess-Game
 
-As required in the HOMEWORK instruction, my game is linked to my RESPONSIVE-portfolio and viceversa.
+As required per the HOMEWORK instruction, the game is linked to user RESPONSIVE-portfolio and viceversa.
