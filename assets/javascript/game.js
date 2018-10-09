@@ -106,8 +106,9 @@ var gameOfGuess = {
 
     getReward: function () {
         document.getElementById("songReward").setAttribute("src", this.songToPlay);
+        document.getElementById("songReward").setAttribute("style", "opacity:1;border-color:white; border-width: 1px; border-style: groove;");
         document.getElementById("picReward").setAttribute("src", this.picToGrab);
-        document.getElementById("picReward").setAttribute("style", "opacity:1");
+        document.getElementById("picReward").setAttribute("style", "opacity:1;border-color:white; border-width: 1px; border-style: groove;");
     }
 }
 
